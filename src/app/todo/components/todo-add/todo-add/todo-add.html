@@ -1,0 +1,13 @@
+<section class="mt-4 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-4">
+        <div class="flex gap-2">
+
+            <input type="text" class="flex-1 rounded-lg border border-zinc-800 px-2 py-1" placeholder="what needs to be done?"
+            aria-label="mew todo"
+            [(ngModel)]="newTitle"
+            (keyup.enter)="addTodo(newTitle)"
+            >
+            <button class="rounded-lg border border-zinc-800 px-2 py-1 bg-blue-500" aria-label="add todo" (click)="addTodo(newTitle)">Add</button>
+
+        </div>
+
+    </section>
